@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitor de flotas</title>
+<style>/* DASHBOARD_CSS */</style>
+</head>
+<body>
+<header class="top"><div class="shell mast"><span class="brand">Monitor de flotas</span><span>Datos sintéticos</span></div></header>
+<main class="shell">
+  <div class="intro">
+    <div><h1>Control de mantenimiento</h1><p id="reference"></p></div>
+    <div class="filters">
+      <label>Flota<select id="fleet"></select></label>
+      <label>Equipo<select id="equipment"></select></label>
+    </div>
+  </div>
+  <nav aria-label="Vistas de mantenimiento">
+    <button data-view="overview" aria-current="page">Resumen</button>
+    <button data-view="inspections">Inspecciones</button>
+    <button data-view="orders">Órdenes de trabajo</button>
+    <button data-view="preventive">Preventivo</button>
+  </nav>
+  <section id="view" aria-label="Vista de mantenimiento"></section>
+</main>
+<script id="dataset" type="application/json">/* DASHBOARD_DATA */</script>
+<script>/* DASHBOARD_JS */</script>
+</body>
+</html>
